@@ -1,9 +1,9 @@
 public class Motor{
-	int caballosFuerza;
-	String marca;
-	int cantCilindros;
-	int cantPistones;
-	int bujias;
+	private int caballosFuerza;
+	private String marca;
+	private int cantCilindros;
+	private int cantPistones;
+	private int bujias;
 	Motor(int a, String b, int c, int d, int e){
 		this.caballosFuerza=a;
 		this.marca = b;
@@ -13,5 +13,13 @@ public class Motor{
 	}
 	public void arrancar(){
 		System.out.println("El motor ha arrancado");
+	}
+	public int getCaballosFuerza(){
+		return caballosFuerza;
+	}
+	publis void setCaballosFuerza(int a){
+		if(a>=0){
+			this.caballosFuerza=a;
+		}
 	}
 }
