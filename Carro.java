@@ -2,13 +2,15 @@ public class Carro{
 	String color;
 	int tamano;
 	String marca;
+	String fabricante;
 	boolean tieneMotor;
 	Motor f150;
-	Carro(String col, int tamano, String marc, boolean m){
+	Carro(String col, int tamano, String marc, boolean m, String fab){
 		this.color=col;
 		this.tamano=tamano;
 		this.marca=marc;
 		this.tieneMotor=m;
+		this.fabricante=fab;
 		if(tieneMotor==true){
 			f150=new Motor(100,"f-150 Ford",4 ,4 ,1);
 		}
