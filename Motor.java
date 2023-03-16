@@ -17,9 +17,10 @@ public class Motor{
 	public int getCaballosFuerza(){
 		return caballosFuerza;
 	}
-	publis void setCaballosFuerza(int a){
+	public void setCaballosFuerza(int a){
 		if(a>=0){
 			this.caballosFuerza=a;
 		}
 	}
 }
+// Salón de clases (Clase), y estudiantes

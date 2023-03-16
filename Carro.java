@@ -5,6 +5,7 @@ public class Carro{
 	String fabricante;
 	boolean tieneMotor;
 	Motor f150;
+	Llantas ruedas[]=new Llantas[4];
 	Carro(String col, int tamano, String marc, boolean m, String fab){
 		this.color=col;
 		this.tamano=tamano;
@@ -14,12 +15,21 @@ public class Carro{
 		if(tieneMotor==true){
 			f150=new Motor(100,"f-150 Ford",4 ,4 ,1);
 		}
+		ruedas[0]=new Llantas("Michellini",29);
+		ruedas[1]=new Llantas("Diablorrosi",29);
+		ruedas[2]=new Llantas("Goodyear",29);
+		ruedas[3]=new Llantas("Pirelli",29);
 	}
 	public void arrancar(){
 		if(tieneMotor==true){
 			f150.arrancar();
+			ruedas[0].friccion();
+			ruedas[1].friccion();
 		}
 	}
+	public void cambiarLlanta(int llanta,String marca){
+		ruedas[llanta].setMarca(marca);
+	}	
 	public void arrancar(int kilometrosAndados){
 		System.out.println("Me movi los siguientes Kilometros"+kilometrosAndados);
 	}

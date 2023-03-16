@@ -15,5 +15,6 @@ public class Principal{
 		System.out.println(chevroletSail.getColor());
 		System.out.println(chevroletSail.getTamano());
 		chevroletSail.arrancar();
+		chevroletSail.cambiarLlanta(3,"Prueba");
 	}
 }
